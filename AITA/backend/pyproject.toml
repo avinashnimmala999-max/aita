@@ -1,0 +1,20 @@
+[project]
+name = "pragati-api"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.135.1",
+  "uvicorn==0.41.0",
+  "python-multipart==0.0.22",
+  "httpx==0.28.1",
+  "pytest==8.3.5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "ruff==0.11.13",
+]
